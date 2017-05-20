@@ -1,0 +1,389 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#head{
+    width: 100%;
+    padding: 0;
+    display: block;
+    margin: 0;
+}
+#navbar{
+    font-family: 'Open Sans', sans-serif;
+    background-color:#00a652 ;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+#navbar span{
+    color: white;
+    margin: 5% 3% 5% 3%;
+    font-size: 22px;
+    padding: 10% 0 10% 0;
+}
+
+#navbar span:hover {
+    cursor: pointer;
+}
+
+#about_my_head{
+    text-align: center;
+    color:#3ab54a;
+}
+
+#about_my_head p{
+    margin-top: 5%;
+    border-style:solid;
+    border-color:#287EC7;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url("Gotham Medium Regular.ttf");
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url(Gotham%20Rounded%20Medium.otf);
+}
+#about_me_a {
+    background-clip: border-box;
+    background-color: rgba(58, 181, 74, 0.95);
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-width: 1;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgba(0, 0, 0, 0);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: "myFirstFont", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    height: 44px;
+    line-height: 20.2702px;
+    margin-bottom: 0px;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 11px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 11px;
+    text-align: center;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-size-adjust: 100%;
+    touch-action: manipulation;
+    width: 30%;
+    margin: 2% 0 4% 0;
+}
+
+#about_me_p{
+    margin: 0% 10% 0% 10%;
+    text-align: right;
+    font-size: 18px;
+    font-family: Helvetica;
+    color: rgb(88,88,88);
+    line-height: 1.53em;
+    display:inline-block;
+   vertical-align: top;
+}
+
+#about_me_image{
+    margin-left: 20%;
+    width: 15%;
+    display:inline-block;
+}
+
+
+
+#about_me_thumim{
+    margin: 5% 25% 0 25%;
+    text-align: center;
+    font-size: 30px;
+    font-family: mySecondFont;
+    color: rgb(88,88,88);
+    line-height: 1.33em;
+    text-shadow: 1px 1px 1px #000;;
+}
+
+.issue{
+    display: table-cell;
+    height: 100%;
+    width: 32%;
+    text-align: center;
+    color: rgb(88,186,128);
+    font-family: Helvetica;
+}
+
+.issue p {
+    padding: 0 20% 0 20%;
+    font-size: 1.3em;
+}
+
+.issue h3 {
+    font-size: 1.7em;
+}
+
+#about_me_d{
+    margin-top: 5%;
+}
+#about_me_p_c{
+    margin: 2% 10% 7% 10%;
+    text-align: right;
+    font-size: 18px;
+    font-family: Helvetica;
+    color: rgb(88,88,88);
+    line-height: 1.53em;
+}
+
+.main{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+.q_a_content {
+    padding: 0;
+    display: table-cell;
+    height: 100%;
+    width: 40%;
+    margin-left: 10%;
+    text-align: center;
+    color: rgb(88, 186, 128);
+    font-family: Helvetica;
+    vertical-align: top;
+}
+
+.q_a_image{
+    height :20em;
+    padding: 0;
+    display: table-cell;
+    width: 40%;
+    margin-left: 10%;
+    text-align: center;
+    color: rgb(88, 186, 128);
+    font-family: Helvetica;
+    vertical-align: top;
+}
+
+.q_a_image img{
+    height: 100%;
+    width: auto;
+}
+
+
+
+.q_a_content p{
+    text-align: right;
+    margin-right: 10%;
+}
+
+#invite{
+    text-align: center;
+    margin-top: 5%;
+    font-family: Helvetica;
+}
+
+#contact{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    background-color: black;
+    color: white;
+}
+
+#contact_ways{
+    padding: 0;
+    display: table-cell;
+    height: 100%;
+    width: 40%;
+    margin-left: 10%;
+    text-align: center;
+    color:white;
+    font-family: Helvetica;
+    vertical-align: top;
+}
+
+
+#contact_ways h2 {
+    margin-bottom: 12%;
+}
+#contact_form{
+    padding: 0;
+    display: table-cell;
+    height: 100%;
+    width: 40%;
+    margin-left: 10%;
+    text-align: center;
+    color:white;
+    font-family: Helvetica;
+    vertical-align: top;
+}
+
+
+.contact_detail{
+    margin-top: 4%;
+    text-align: left;
+    margin-left: 40%;
+}
+.circle
+{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.circle{
+    display: inline-block;
+}
+.circle img{
+    margin-top: 6%;
+}
+
+.details{
+    display: inline-block;
+    vertical-align:top;
+}
+.details p{
+    vertical-align:top;
+    margin-top: 8px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.details p a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.form-style-6{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    margin-bottom: 10%;
+    padding: 16px;
+    background: #F7F7F7;
+}
+.form-style-6 h1{
+    background: #43D1AF;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+    background: #2EBC99;
+}
+
+#send_form_succes{
+    background-color: #287EC7;
+    font-size: 1.2em;
+}
+
+#send_form_fail{
+    background-color:red;
+    font-size: 1.2em;
+}
+.error_message{
+    float: right;
+    margin-bottom: 1%;
+    margin-top: -1%;
+    color: red;
+}
+
+#error_message_form_less_fields{
+    float: none;
+}
+footer{
+    background-color: rgb(58,181,74);
+}
+
+form{
+    margin-bottom: 10%;
+}
+footer img{
+    margin-left: 15%;
+}
