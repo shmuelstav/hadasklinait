@@ -96,7 +96,6 @@ $(document).ready(function() {
                         sending(mail.data_mail());
                     }
                     else {
-                        alert("problem with fields");
                     }
                 }
 

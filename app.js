@@ -23,6 +23,11 @@ app.get('/', function (req, res) {
     res.render('main')
 })
 
+app.get('/mobile', function (req, res) {
+    res.render('mainmobile')
+})
+
+
 app.post('/mail', function (req, res) {
     mail.send_mail(req.body);
     res.status(200);
@@ -31,6 +36,6 @@ app.post('/mail', function (req, res) {
 })
 
 
-app.listen(3001, function () {
+app.listen(8080, function () {
     console.log('Example app listening on port 8080!')
 })

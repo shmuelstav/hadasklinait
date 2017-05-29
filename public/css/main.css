@@ -20,7 +20,7 @@ body{
 #navbar span{
     color: white;
     margin: 5% 3% 5% 3%;
-    font-size: 22px;
+    font-size: 1.5em;
     padding: 10% 0 10% 0;
 }
 
@@ -386,4 +386,13 @@ form{
 }
 footer img{
     margin-left: 15%;
+}
+
+@media only screen and (max-width: 500px) {
+    #navbar span {
+        font-size: 1em;
+    }
+    #about_me_a{
+        font-size: 1.2em;
+    }
 }
