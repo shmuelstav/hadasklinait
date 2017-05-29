@@ -23,6 +23,10 @@ app.get('/', function (req, res) {
     res.render('main')
 })
 
+app.get('/mobile', function (req, res) {
+    res.render('mainmobile')
+})
+
 app.post('/mail', function (req, res) {
     mail.send_mail(req.body);
     res.status(200);
