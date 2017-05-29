@@ -88,6 +88,7 @@ $(document).ready(function() {
             $("#send_form").click(function (event) {
                 //this.check_reuire_fields();
                 if (!mail.check_reuire_fields()) {
+                    alert("less fields");
                     $('#form_name').before('<span id="error_message_form_less_fields" class="error_message">חסרים שדות חובה</span>');
                 }
                 else {
@@ -96,9 +97,12 @@ $(document).ready(function() {
                         sending(mail.data_mail());
                     }
                     else {
+                        alert("problem with fields");
                     }
+
                 }
 
+                // $('#send_form').replaceWith('<input type="button" id="send_form_succes"  value="המייל נשלח בהצלחה" />');
                  function sending(data) {
                      console.log(data);
                      $.ajax({
@@ -119,9 +123,64 @@ $(document).ready(function() {
                     function fail(){
                         $('#send_form').replaceWith('<input type="button" id="send_form_fail"  value="בעיה בשליחת המייל,יש לנסות מאוחר יותר" />');
                     }
+
+                /* data_mail ={
+                 name: $("#form_name").val(),
+                 phone: $("#form_phone").val(),
+                 mail: $("#form_mail").val(),
+                 message: $("#form_message").val()
+                 }
+                 $.ajax({
+                 type    : 'POST',
+                 url     : '/mail',
+                 data    : data,
+                 cache   : false,
+                 dataType: "json",
+                 success : function (serverResponse) {
+                 alert('mail sent successfully.'); },
+                 error   : function (serverResponse) { alert('mail  not sent successfully.'); }
+                 });*/
                 return false;
             })
         },
     }
     mail.initiliaze();
+
+
+//send_mail();
+
+    /*  $( "#send_form" ).click(function( event ) {
+     mail.check_reuire_fields();
+     if(!mail.check_reuire_fields()){
+     alert("less fields");
+     }
+     else{
+     if(mail.validatePhone(mail.mail.value)){
+     $('#send_form').replaceWith('<input type="button" id="send_form_succes"  value="המייל נשלח בהצלחה" />');
+     }
+     else{
+     alert("problem with fields fields");
+     }
+
+     }
+
+     // $('#send_form').replaceWith('<input type="button" id="send_form_succes"  value="המייל נשלח בהצלחה" />');
+
+     /* data_mail ={
+     name: $("#form_name").val(),
+     phone: $("#form_phone").val(),
+     mail: $("#form_mail").val(),
+     message: $("#form_message").val()
+     }
+     $.ajax({
+     type    : 'POST',
+     url     : '/mail',
+     data    : data_mail,
+     cache   : false,
+     dataType: "json",
+     success : function (serverResponse) {
+     alert('mail sent successfully.'); },
+     error   : function (serverResponse) { alert('mail  not sent successfully.'); }
+     });*/
+
 })
