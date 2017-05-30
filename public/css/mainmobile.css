@@ -128,26 +128,24 @@ body{
 }
 
 .issue{
-    display: table-cell;
-    height: 100%;
-    width: 32%;
+    width: 100%;
     text-align: center;
     color: rgb(88,186,128);
     font-family: Helvetica;
 }
 
 .issue img{
-    height: 15%;
+   width: 80%;
 }
 
 .issue p {
-    text-align:right;
+    text-align:center;
     padding: 0 2% 0 2%;
-    font-size: 0.7em;
+    font-size: 1.4em;
 }
 
 .issue h3 {
-    font-size: 0.9em;
+    font-size: 1.8em;
 }
 
 #about_me_d{
