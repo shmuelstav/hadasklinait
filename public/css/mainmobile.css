@@ -121,7 +121,7 @@ body{
 #about_me_thumim{
     margin: 5% 3% 0 3%;
     text-align: center;
-
+    font-size: 1.5em;
     font-family: mySecondFont;
     color: rgb(88,88,88);
     line-height: 1.33em;
@@ -152,9 +152,10 @@ body{
     margin-top: 5%;
 }
 #about_me_p_c{
-    margin: 2% 10% 7% 10%;
+    margin: 7% 10% 7% 10%;
     text-align: right;
     font-family: Helvetica;
+    font-size: 1.3em;
     color: rgb(88,88,88);
     line-height: 1.53em;
 }
@@ -166,10 +167,7 @@ body{
 }
 .q_a_content {
     padding: 0;
-    display: table-cell;
-    height: 100%;
-    width: 40%;
-    margin-left: 10%;
+    width: 100%;
     text-align: center;
     color: rgb(88, 186, 128);
     font-family: Helvetica;
@@ -177,11 +175,8 @@ body{
 }
 
 .q_a_image{
-    height :20em;
     padding: 0;
-    display: table-cell;
-    width: 40%;
-    margin-left: 10%;
+    width: 100%;
     text-align: center;
     color: rgb(88, 186, 128);
     font-family: Helvetica;
@@ -189,15 +184,15 @@ body{
 }
 
 .q_a_image img{
-    height: 100%;
-    width: auto;
+    width: 80%;
 }
 
 
 
 .q_a_content p{
     text-align: right;
-    margin-right: 10%;
+    margin-left: 3%;
+    margin-right: 5%;
 }
 
 #invite{
