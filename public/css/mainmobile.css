@@ -191,6 +191,7 @@ body{
 
 .q_a_content p{
     text-align: right;
+    font-size: 1.1em;
     margin-left: 3%;
     margin-right: 5%;
 }
@@ -207,6 +208,8 @@ body{
     table-layout: fixed;
     background-color: black;
     color: white;
+    padding-bottom: 7%;
+
 }
 
 #contact_ways{
@@ -241,7 +244,7 @@ body{
 .contact_detail{
     margin-top: 4%;
     text-align: left;
-    margin-left: 40%;
+    margin-left: 15%;
 }
 .circle
 {
@@ -276,12 +279,14 @@ body{
 }
 
 
+#contact_form h2{
+    color: black;
+}
+
 .form-style-6{
     font: 95% Arial, Helvetica, sans-serif;
     max-width: 400px;
     margin: 10px auto;
-    margin-bottom: 10%;
-    padding: 16px;
     background: #F7F7F7;
 }
 .form-style-6 h1{
@@ -378,9 +383,3 @@ footer{
     background-color: rgb(58,181,74);
 }
 
-form{
-    margin-bottom: 10%;
-}
-footer img{
-    margin-left: 15%;
-}
