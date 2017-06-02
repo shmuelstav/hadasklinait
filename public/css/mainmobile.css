@@ -32,7 +32,9 @@ body{
     text-align: center;
     color:#3ab54a;
 }
-
+#about_me_p_div{
+    text-align: center;
+}
 #about_my_head p{
     margin-top: 5%;
     border-style:solid;
@@ -191,8 +193,8 @@ body{
 
 .q_a_content p{
     text-align: right;
-    font-size: 1.1em;
-    margin-left: 3%;
+    font-size: 1.3em;
+    margin-left: 5%;
     margin-right: 5%;
 }
 
@@ -230,10 +232,6 @@ body{
 }
 #contact_form{
     padding: 0;
-    display: table-cell;
-    height: 100%;
-    width: 40%;
-    margin-left: 10%;
     text-align: center;
     color:white;
     font-family: Helvetica;
@@ -262,6 +260,11 @@ body{
     margin-top: 6%;
 }
 
+
+#all_contant_details{
+    text-align: center;
+
+}
 .details{
     display: inline-block;
     vertical-align:top;
@@ -360,14 +363,18 @@ body{
     background: #2EBC99;
 }
 
+
+#send_form{
+    font-size: 1.6em;
+}
 #send_form_succes{
     background-color: #287EC7;
-    font-size: 1.2em;
+    font-size: 1.6em;
 }
 
 #send_form_fail{
     background-color:red;
-    font-size: 1.2em;
+    font-size: 1.6em;
 }
 .error_message{
     float: right;
