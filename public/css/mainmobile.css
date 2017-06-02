@@ -263,7 +263,10 @@ body{
 
 #all_contant_details{
     text-align: center;
-
+}
+#all_contant_details2{
+    text-align: left;
+    margin-left: 10%;
 }
 .details{
     display: inline-block;
