@@ -24,6 +24,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/mobile', function (req, res) {
+    console.log("mobile connect");
     res.render('mainmobile')
 })
 
