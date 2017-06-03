@@ -100,12 +100,12 @@ body{
 }
 
 #about_me_p{
+    font-size: 1.5em;
+    line-height: 2em;
     margin: 0% 2% 0% 2%;
     text-align: right;
-    font-size: 1.2em;
     font-family: Helvetica;
     color: rgb(88,88,88);
-    line-height: 1.53em;
     display:inline-block;
    vertical-align: top;
 }
@@ -193,7 +193,7 @@ body{
 
 .q_a_content p{
     text-align: right;
-    font-size: 1.3em;
+    font-size: 21px;
     margin-left: 5%;
     margin-right: 5%;
 }
