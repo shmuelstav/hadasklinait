@@ -109,13 +109,13 @@ body{
     display:inline-block;
    vertical-align: top;
 }
-
+#about_me_image_frame{
+    text-align: center;
+}
 #about_me_image{
     text-align: center;
-    margin-left: 10%;
     margin-top: 4%;
-    width: 80%;
-    display:inline-block;
+    width: 65%;
 }
 
 
@@ -186,7 +186,7 @@ body{
 }
 
 .q_a_image img{
-    width: 80%;
+    width: 65%;
 }
 
 
