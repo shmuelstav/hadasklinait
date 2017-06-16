@@ -1,5 +1,13 @@
-
-
+#divbutton{
+    width:250px;
+    height: 380px;
+    background-color: yellow;
+}
+#button{
+    width: 100px;
+    height: 350px;
+    background-color: #287EC7;
+}
 #e1{
     background-color: red;
     height: 150px;

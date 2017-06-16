@@ -63,9 +63,10 @@ $(document).ready(function() {
     }
 
 
-    $("#button").on("click", function (e) {
+    $("#divbutton").on("click", function (e) {
         // Prevent a page reload when a link is pressed
         e.preventDefault();
+        alert("work");
             window.scrollTo(0, 5000);
 
     });
