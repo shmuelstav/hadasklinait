@@ -57,7 +57,7 @@ $(document).ready(function() {
     scrollTopElement = getScrollTopElement();
     function src(){
         alert(scrollTopElement);
-        $(scrollTopElement).animate({ scrollTop: 100 }, 500, function() {
+        $(scrollTopElement).animate({ scrollTop: 1000 }, 500, function() {
             // normal callback
         });
     }
@@ -67,10 +67,11 @@ $(document).ready(function() {
         // Prevent a page reload when a link is pressed
         e.preventDefault();
         alert(scrollTopElement);
+        src();
         alert("work");
         goToByScroll("e8");
         alert("work1");
-        src();
+
     });
 
 });
