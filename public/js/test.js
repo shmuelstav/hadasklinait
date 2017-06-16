@@ -3,7 +3,6 @@
  */
 
 $(document).ready(function() {
-alert
     var mail = {
         name: $("#form_name"),
         phone: $("#form_phone"),

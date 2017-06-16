@@ -20,7 +20,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
-    res.render('main')
+    res.render('test')
 })
 
 app.get('/mobile', function (req, res) {
