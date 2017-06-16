@@ -7,7 +7,7 @@ function goToByScroll(id){
     var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
     if (iOS) {
         alert("ios");
-        $('html, body', parent.document).animate({ scrollTop: $("body").offset().top},1500,"easeOutQuart");
+        $('html, body', parent.document).animate({ scrollTop: 1600},1500,"easeOutQuart");
     } else {
         $('html,body').animate({
                 scrollTop: $("#"+id).offset().top}
