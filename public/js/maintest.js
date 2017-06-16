@@ -67,7 +67,10 @@ $(document).ready(function() {
         // Prevent a page reload when a link is pressed
         e.preventDefault();
         alert("work");
-        setTimeout(window.scroll(0,5000),1000);
+       // setTimeout(window.scroll(0,5000),1000);
+        $('body').animate({ scrollTop: 1000 }, 500, function() {
+            alert("dfdsf");
+        });
         //window.scrollBy(0, 5000);
 
     });
