@@ -67,7 +67,8 @@ $(document).ready(function() {
         // Prevent a page reload when a link is pressed
         e.preventDefault();
         alert("work");
-        window.scrollBy(0, 5000);
+        setTimeout(window.scrollTo(0,5000),100);
+        //window.scrollBy(0, 5000);
 
     });
 
