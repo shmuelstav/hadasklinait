@@ -66,11 +66,7 @@ $(document).ready(function() {
     $("#button").on("click", function (e) {
         // Prevent a page reload when a link is pressed
         e.preventDefault();
-        alert(scrollTopElement);
-        src();
-        alert("work");
-        goToByScroll("e8");
-        alert("work1");
+            window.scrollTo(0, 5000);
 
     });
 
