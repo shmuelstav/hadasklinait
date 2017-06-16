@@ -56,7 +56,7 @@ $(document).ready(function() {
 // we'll use this as the selector for our page scrolling animation.
     scrollTopElement = getScrollTopElement();
     function src(){
-        alert(scrollTopElement)
+        alert(scrollTopElement);
         $(scrollTopElement).animate({ scrollTop: 100 }, 500, function() {
             // normal callback
         });
@@ -66,6 +66,7 @@ $(document).ready(function() {
     $("#button").on("click", function (e) {
         // Prevent a page reload when a link is pressed
         e.preventDefault();
+        alert(scrollTopElement);
         alert("work");
         goToByScroll("e8");
         alert("work1");
