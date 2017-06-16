@@ -5,7 +5,6 @@
 
 $(document).ready(function() {
 
-
     /*google analitics */
 
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -37,7 +36,13 @@ $(document).ready(function() {
         // Prevent a page reload when a link is pressed
         e.preventDefault();
         // Call the scroll function
+
+        var target = $(this);
+        target.css('overflow-y', 'hidden');
         goToByScroll($(this).attr("id"));
+        target.css('overflow-y', 'auto');
+
+
     });
 });
 
