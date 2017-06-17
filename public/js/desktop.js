@@ -1,12 +1,41 @@
 /**
- * Created by shmuel on 5/12/2017.
+ * Created by shmuel on 6/18/2017.
  */
-
 $(document).ready(function() {
 
-    $('#contact_form').localScroll({
-        target:'body'
-    });
+    /*google analitics */
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-61270998-3', 'auto');
+    ga('send', 'pageview');
+
+
+
+    function goToByScroll(id){
+     // Reove "link" from the ID
+     id = id.replace("link", "");
+     // Scroll
+     $('html,body').animate({
+     scrollTop: $("#"+id).offset().top}
+     , 'slow');
+     }
+
+    $("#linkcontact, #linkabout_me_p_c").on("click",function(e) {
+     // Prevent a page reload when a link is pressed
+     e.preventDefault();
+     // Call the scroll function
+
+     var target = $(this);
+     target.css('overflow-y', 'hidden');
+     goToByScroll($(this).attr("id"));
+     target.css('overflow-y', 'auto');
+
+
+     });
     var mail = {
         name: $("#form_name"),
         phone: $("#form_phone"),
@@ -106,30 +135,32 @@ $(document).ready(function() {
                 }
 
                 // $('#send_form').replaceWith('<input type="button" id="send_form_succes"  value="המייל נשלח בהצלחה" />');
-                 function sending(data) {
-                     console.log(data);
-                     $.ajax({
-                         type    : 'POST',
-                         url     : '/mail',
-                         data    : data,
-                         cache   : false,
-                         dataType: "json",
-                         success : success() ,
-                         error   : fail()
-                     });
-                 }
+                function sending(data) {
+                    console.log(data);
+                    $.ajax({
+                        type    : 'POST',
+                        url     : '/mail',
+                        data    : data,
+                        cache   : false,
+                        dataType: "json",
+                        success : success() ,
+                        error   : fail()
+                    });
+                }
 
-                    function success (){
-                        $('#send_form').replaceWith('<input type="button" id="send_form_succes"  value="המייל נשלח בהצלחה" />');
-                    }
+                function success (){
+                    $('#send_form').replaceWith('<input type="button" id="send_form_succes"  value="המייל נשלח בהצלחה" />');
+                }
 
-                    function fail(){
-                        $('#send_form').replaceWith('<input type="button" id="send_form_fail"  value="בעיה בשליחת המייל,יש לנסות מאוחר יותר" />');
-                    }
+                function fail(){
+                    $('#send_form').replaceWith('<input type="button" id="send_form_fail"  value="בעיה בשליחת המייל,יש לנסות מאוחר יותר" />');
+                }
                 return false;
             })
         },
     }
     mail.initiliaze();
+});
 
-})
+
+
