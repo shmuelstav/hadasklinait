@@ -36,6 +36,10 @@ $(document).ready(function() {
 
 
      });
+
+
+
+    
     var mail = {
         name: $("#form_name"),
         phone: $("#form_phone"),
@@ -49,6 +53,8 @@ $(document).ready(function() {
                 message: this.message.val()
             }
         },
+
+
         /* Function for validate the data at the form */
 
         validation: function () {
