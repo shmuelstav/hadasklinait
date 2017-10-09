@@ -39,7 +39,7 @@ $(document).ready(function() {
 
 
 
-    
+
     var mail = {
         name: $("#form_name"),
         phone: $("#form_phone"),
